@@ -1,0 +1,13 @@
+# 数据库默认关闭；不准备任何外部依赖也能启动示例。
+http:
+  host: 127.0.0.1
+  port: 8080
+postgres:
+  enabled: false
+  connection:
+    host: localhost
+    database: example
+    user: example
+    # 本地开发明文连接需明确选择；生产使用 verify-full 并配置可信 CA。
+    ssl_mode: disable
+# 密码通过 EXAMPLE_POSTGRES_CONNECTION_PASSWORD 提供，不写入示例文件。

@@ -1,0 +1,30 @@
+# 本地 Agent 协作规范
+AGENT.md
+
+# 本地开发资料与迁移备份
+/docs/
+/backend_design/
+/*.pptx
+/app_system_mindmap.html
+/easy_framework_refactor.md
+
+# 编译、测试与运行产物
+*.exe
+*.test
+/bin/
+/logs/
+/test-artifacts/
+/coverage.out
+/coverage.html
+
+# IDE 与本地工作区
+/.idea/
+/go.work
+/go.work.sum
+
+# 本地运行配置；保留示例
+/configs/*.local.yaml
+/configs/*.local.yml
+/.env
+/.env.*
+!/.env.example
